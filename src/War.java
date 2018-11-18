@@ -17,6 +17,7 @@ public class War {
 	// hands
 
 	public static void main(String[] args) {
+		System.out.println("Hit \"Enter\" to play a round");
 		Player player1 = new Player("Player 1");
 		Player computer = new Player("Computer");
 		Deck deck = new Deck();
