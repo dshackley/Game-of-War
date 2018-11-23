@@ -1,7 +1,14 @@
+/**
+ * 
+ * @author Danielle Shackley
+ */
 public class Deck extends Pile {
 
 	public final static int DECK_SIZE = 52;
 
+	/**
+	 * 
+	 */
 	public Deck() {
 		super();
 		for (int i = 0; i < DECK_SIZE; i++) {
@@ -11,12 +18,17 @@ public class Deck extends Pile {
 		shuffle();
 	}
 
-	// deals card from deck and returns it
-	// throw exception if stack is empty
+	/**
+	 * 
+	 * @param player
+	 */
 	public void dealCard(Player player) {
 		player.addCardToHand(super.removeCard());
 	}
-
+	
+	/* (non-Javadoc)
+	 * @see Pile#toString()
+	 */
 	public String toString() {
 		return super.toString();
 	}
